@@ -3,7 +3,7 @@ package com.devsuperior.hrworker.resources;
 import java.util.List;
 
 import com.devsuperior.hrworker.entities.Worker;
-import com.devsuperior.hrworker.repositories.workerRepository;
+import com.devsuperior.hrworker.repositories.WorkerRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class WorkerResource {
     
     @Autowired
-    private workerRepository repository;
+    private WorkerRepository repository;
     
     @GetMapping
     public ResponseEntity<List<Worker>> findAll(){
